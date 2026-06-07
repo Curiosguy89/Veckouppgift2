@@ -1,4 +1,5 @@
 
+# Veckouppgift 1, Pris och rabatt
 discount = 0
 bli_medlem = input("Skriv ja om du vill bli medlem och ta del av våra rabatter:")
 if bli_medlem == "ja":
