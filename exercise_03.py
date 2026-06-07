@@ -24,4 +24,4 @@ if Liverpool_goals > Tottenham_goals:
 if  Liverpool_goals == Tottenham_goals:
     print("Tottenham gjorde", Tottenham_goals,"mål, och Liverpoool gjorde", Liverpool_goals, "mål, matchen blev oavgjort!")
 
-# här kan man också skriva if på rad 18, elif på rad 21 och else på rad 24 ist'llet för massa if.
+# här kan man också skriva if på rad 18, elif på rad 21 och else på rad 24 istället för massa if.
