@@ -9,14 +9,14 @@ else:
 
 price = float(input ("Välkommen, hur mycket vill du handla för?"))
 #pris endast för medlemmar
-
+level1 = 100
+level2 = 300
 if bli_medlem == "ja":
-    if 100 <= price < 300:
-        print(f"Grattis! Du får 10% rabatt.")
+    if level1 <= price < level2:
+        print("Grattis! Du har uppnåt nivå 1 Du får 10% rabatt.")
         discount = 10
-
-    elif price <= 300:
-        print(f"Grattis! Du får 25% rabatt.")
+    elif price >= level2:
+        print("Grattis! Du har uppnåt nivå 2 Du får 25% rabatt.")
         discount = 25
 final_price = price * (100 - discount) / 100
 print("Slutpris efter avdragen rabatt:", final_price)
