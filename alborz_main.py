@@ -1,16 +1,21 @@
-is_member = False
-level1 = 100
-level2 = 300
+
 discount = 0
+bli_medlem = input("Skriv ja om du vill bli medlem och ta del av våra rabatter:")
+if bli_medlem == "ja":
+    print("Grattis du är medlem nu!")
+else:
+    print("Du är inte medlem")
 
-price = input ("Välkommen, köp något dyrt")
-price = float(price)
-if price > level1:
-    print(f"Grattis! Du har avamncerat till nivå 1 och får 10% rabatt.")
-    discount = discount + 10
-if price >= level2:
-    print(f"Grattis! Du har avancerat till nivå 2 och får 25% rabatt.")
-    discount = discount + 25
+price = float(input ("Välkommen, hur mycket vill du handla för?"))
+#pris endast för medlemmar
 
+if bli_medlem == "ja":
+    if 100 <= price < 300:
+        print(f"Grattis! Du får 10% rabatt.")
+        discount = 10
+
+    elif price <= 300:
+        print(f"Grattis! Du får 25% rabatt.")
+        discount = 25
 final_price = price * (100 - discount) / 100
-print("Efter rabatter blir priset...." + str(final_price))
+print("Slutpris efter avdragen rabatt:", final_price)
